@@ -1,54 +1,54 @@
 {
-    "name": "netsells/laravel-mutex-migrations",
-    "description": "Run mutually exclusive migrations from more than one server at a time",
-    "type": "library",
-    "license": "MIT",
-    "keywords": [
-        "laravel",
-        "netsells",
-        "migrations",
-        "mutex"
-    ],
-    "authors": [
-        {
-            "name": "Tom Moore",
-            "email": "tom.moore@netsells.co.uk"
-        },
-        {
-            "name": "Sam Jordan",
-            "email": "sam.jordan@netsells.co.uk"
-        }
-    ],
-    "require": {
-        "php": "^8.2",
-        "illuminate/contracts": "^10.0 | ^11.0 | ^12.0",
-        "illuminate/console": "^10.0 | ^11.0 | ^12.0",
-        "illuminate/database": "^10.0 | ^11.0 | ^12.0",
-        "illuminate/support": "^10.0 | ^11.0 | ^12.0"
+  "name": "yourparkingspace/laravel-mutex-migrations",
+  "description": "Run mutually exclusive migrations from more than one server at a time",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "netsells",
+    "migrations",
+    "mutex"
+  ],
+  "authors": [
+    {
+      "name": "Tom Moore",
+      "email": "tom.moore@netsells.co.uk"
     },
-    "require-dev": {
-        "orchestra/testbench": "^8.0 | ^9.0 | ^10.0",
-        "spatie/fork": "^1.2"
-    },
-    "autoload": {
-        "psr-4": {
-            "Netsells\\LaravelMutexMigrations\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Netsells\\LaravelMutexMigrations\\Tests\\": "tests/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Netsells\\LaravelMutexMigrations\\DependencyBindingProvider",
-                "Netsells\\LaravelMutexMigrations\\PackageProvider"
-            ]
-        }
-    },
-    "config": {
-        "sort-packages": true
+    {
+      "name": "Sam Jordan",
+      "email": "sam.jordan@netsells.co.uk"
     }
+  ],
+  "require": {
+    "php": "^8.2",
+    "illuminate/contracts": "^10.0 | ^11.0 | ^12.0",
+    "illuminate/console": "^10.0 | ^11.0 | ^12.0",
+    "illuminate/database": "^10.0 | ^11.0 | ^12.0",
+    "illuminate/support": "^10.0 | ^11.0 | ^12.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.0 | ^9.0 | ^10.0",
+    "spatie/fork": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Netsells\\LaravelMutexMigrations\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Netsells\\LaravelMutexMigrations\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Netsells\\LaravelMutexMigrations\\DependencyBindingProvider",
+        "Netsells\\LaravelMutexMigrations\\PackageProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
 }
